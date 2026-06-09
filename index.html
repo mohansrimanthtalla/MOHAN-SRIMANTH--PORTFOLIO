@@ -137,7 +137,20 @@ section{position:relative;z-index:1;padding:5rem 2rem}
 .cert-name{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.25rem}
 .cert-issuer{font-size:0.85rem;color:var(--text3)}
 .cert-badge{position:absolute;top:1.25rem;right:1.25rem;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--neon),var(--neon2));display:flex;align-items:center;justify-content:center;font-size:0.85rem;box-shadow:0 0 15px rgba(0,212,255,0.4)}
+.cert-image{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:1rem;
+    border:1px solid var(--border);
+    transition:all 0.3s;
+}
 
+.cert-image:hover{
+    transform:scale(1.02);
+    border-color:var(--neon);
+}
 /* CAREER */
 .career-card{background:linear-gradient(135deg,rgba(0,102,255,0.06),rgba(0,212,255,0.04));border:1px solid var(--border2);border-radius:16px;padding:3rem;text-align:center;position:relative;overflow:hidden}
 .career-card::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30 L30 0 L60 30 L30 60 Z' fill='none' stroke='rgba(0,212,255,0.03)' stroke-width='1'/%3E%3C/svg%3E") repeat;pointer-events:none}
@@ -479,6 +492,20 @@ section{padding:3.5rem 1rem}
       <div class="achieve-card fade-up fade-up-delay-1"><div class="achieve-icon">💡</div><div class="achieve-text">Active HackerRank Learner</div></div>
       <div class="achieve-card fade-up fade-up-delay-2"><div class="achieve-icon">🧩</div><div class="achieve-text">Active LeetCode Learner</div></div>
       <div class="achieve-card fade-up"><div class="achieve-icon">⚡</div><div class="achieve-text">Consistent Daily Coding</div></div>
+  <div class="achieve-card fade-up">
+  <div class="achieve-icon">☁️</div>
+  <div class="achieve-text">Cloud Computing Certified</div>
+</div>
+
+<div class="achieve-card fade-up">
+  <div class="achieve-icon">⚛️</div>
+  <div class="achieve-text">Quantum Technologies Certified</div>
+</div>
+
+<div class="achieve-card fade-up">
+  <div class="achieve-icon">🏆</div>
+  <div class="achieve-text">5 Industry Certifications</div>
+</div>
     </div>
   </div>
 </section>
@@ -489,23 +516,46 @@ section{padding:3.5rem 1rem}
     <h2 class="section-title fade-up">Certifications</h2>
     <p class="section-sub fade-up">Industry Recognition</p>
     <div class="cert-grid">
-      <div class="cert-card fade-up">
-        <div class="cert-badge">✓</div>
-        <div class="cert-logo">CISCO</div>
-        <div class="cert-name">Python Essentials 1</div>
-        <div class="cert-issuer">Cisco Networking Academy</div>
-      </div>
-      <div class="cert-card fade-up fade-up-delay-1">
-        <div class="cert-badge">✓</div>
-        <div class="cert-logo">CISCO</div>
-        <div class="cert-name">Python Essentials 2</div>
-        <div class="cert-issuer">Cisco Networking Academy</div>
-      </div>
-      <div class="cert-card fade-up fade-up-delay-2" style="opacity:0.5;border-style:dashed">
-        <div class="cert-badge" style="background:rgba(255,255,255,0.1)">+</div>
-        <div class="cert-logo" style="color:var(--text3);border-color:var(--border)">FUTURE</div>
-        <div class="cert-name" style="color:var(--text3)">Next Certification</div>
-        <div class="cert-issuer">Coming Soon...</div>
+
+  <div class="cert-card fade-up">
+    <div class="cert-badge">✓</div>
+    <div class="cert-logo">CISCO</div>
+    <div class="cert-name">Python Essentials 1</div>
+    <div class="cert-issuer">Cisco Networking Academy</div>
+  </div>
+
+  <div class="cert-card fade-up">
+    <div class="cert-badge">✓</div>
+    <div class="cert-logo">CISCO</div>
+    <div class="cert-name">Python Essentials 2</div>
+    <div class="cert-issuer">Cisco Networking Academy</div>
+  </div>
+
+  <div class="cert-card fade-up">
+    <img src="certificates/infosys-python.jpg" class="cert-image">
+    <div class="cert-badge">✓</div>
+    <div class="cert-logo">INFOSYS</div>
+    <div class="cert-name">Introduction to Python</div>
+    <div class="cert-issuer">Infosys Springboard</div>
+  </div>
+
+  <div class="cert-card fade-up">
+    <img src="certificates/cloud-computing.jpg" class="cert-image">
+    <div class="cert-badge">✓</div>
+    <div class="cert-logo">SIMPLILEARN</div>
+    <div class="cert-name">Introduction to Cloud Computing</div>
+    <div class="cert-issuer">Simplilearn SkillUp</div>
+  </div>
+
+  <div class="cert-card fade-up">
+    <img src="certificates/quantum-technologies.jpg" class="cert-image">
+    <div class="cert-badge">✓</div>
+    <div class="cert-logo">S TECHNOLOGIES</div>
+    <div class="cert-name">Quantum Technologies Certification Course</div>
+    <div class="cert-issuer">S Technologies</div>
+  </div>
+
+</div>
       </div>
     </div>
   </div>
